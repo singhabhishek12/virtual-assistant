@@ -19,7 +19,7 @@ else:
 
 # ✅ Initialize Gemini model using LangChain
 try:
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro", temperature=0.7)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash-lite", temperature=0.7)
 except Exception as e:
     st.error(f"🚨 Failed to initialize Gemini model: {e}")
     st.stop()
